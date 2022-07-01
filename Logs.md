@@ -19,3 +19,11 @@
         * Point Cloud Visualization tool: open3d [[Package]](https://github.com/isl-org/Open3D)
 
     <p align="center"> <img src='imgs/2022/07/20220701_MVT_3DVG.png' align="center" height="200px"> </p>
+
+2. <u>Distilling Audio-Visual Knowledge by Compositional Contrastive Learning(CVPR2021)</u> [[PDF]](https://yanbeic.github.io/Doc/CVPR21-ChenY.pdf) [[Code]](https://github.com/yanbeic/CCL)
+    - Main Idea: Contrastive Compositional learning for video feature extraction in order to solve sematic gap between two different modalities.
+    - Experiments: UCF51:70.0%, ActivityNet:47.3%
+    - Reproduce Notes: 
+        * 1 RTX 3090 takes almost 10h for UCF101, 3 days for ActivityNet, 6 days for VGGSound.
+
+    <p align="center"> <img src='imgs/2022/07/20220701_CCL.png' align="center" height="200px"> </p>
