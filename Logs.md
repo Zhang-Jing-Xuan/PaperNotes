@@ -27,3 +27,13 @@
         * 1 RTX 3090 takes almost 10h for UCF101, 3 days for ActivityNet, 6 days for VGGSound.
 
     <p align="center"> <img src='imgs/2022/07/20220701_CCL.png' align="center" height="200px"> </p>
+
+- **2022/07/02, Saturday.**
+3. <u>3D-SPS: Single-Stage 3D Visual Grounding via Referred Point Progressive Selection(CVPR2022)</u> [[PDF]](https://arxiv.org/pdf/2204.06272.pdf) [[Code]](https://github.com/fjhzhixi/3D-SPS)
+    - Main Idea: First single stage 3D visual grounding method. It regards 3DVG task as a keypoint selection problem. Pcloud is inpupt, Pseed is feature, P0 is language-relevant keypooint, Pt is target keypoints and finally, Pt regresses to the bounding boxes.
+    - Experiments: ScanRefer:47-48%(SOTA), Nr3D:51.5%, Sr3D:62.6%(GOOD)
+    - Reproduce Notes: 
+        * Not implemented yet.(TODO)
+        * 1 Telsa V100 or 2 RTX3090 is enough.
+
+    <p align="center"> <img src='imgs/2022/07/20220702_3D_SPS.png' align="center" height="200px"> </p>
