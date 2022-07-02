@@ -37,3 +37,12 @@
         * 1 Telsa V100 or 2 RTX3090 is enough.
 
     <p align="center"> <img src='imgs/2022/07/20220702_3D_SPS.png' align="center" height="200px"> </p>
+
+4. <u>ScanQA: 3D Question Answering for Spatial Scene Understanding(CVPR2022)</u> [[PDF]](https://arxiv.org/pdf/2112.10482.pdf) [[Code]](https://github.com/ATR-DBI/ScanQA)
+    - Main Idea: This paper provides a new task: 3D VQA and a baseline which consists of 3 parts: queation and point clouds feature extraction, feature fusion and 3 MLP heads for object classification, answer classification and object localization.
+    - Experiments: 23.45%(Baseline)
+    - Reproduce Notes: 
+        * Not implemented yet.(TODO)
+        * 1 Telsa V100 takes < 1 day.
+
+    <p align="center"> <img src='imgs/2022/07/20220702_ScanQA.png' align="center" height="200px"> </p>
