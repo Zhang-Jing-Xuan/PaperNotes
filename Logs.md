@@ -14,7 +14,7 @@
     - Main Idea: Two modals: Point cloud and text. Learn a multi-modal representation independent from from its sepecific single view. Different rotation matrixes are used for robust multi-view representation. Fuse features of each object with the query features.
     - Experiments: Nr3D:55.1%, Sr3D:58.5%, Sr3D+:59.5%(SOTA) ScanRefer:40.80%(GOOD)
     - Reproduce Notes: 
-        * 1 RTX 3090 takes almost 15h for Nr3D.
+        * 1 RTX 3090 takes almost 15h for Nr3D, 55.1% for Nr3D!
         * Replacing all mentions of AT_CHECK with TORCH_CHECK in ./referit3d/external_tools/pointnet2/_ext_src/src in CUDA 11.
         * Point Cloud Visualization tool: open3d [[Package]](https://github.com/isl-org/Open3D)
 
