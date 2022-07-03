@@ -25,9 +25,9 @@ def read_mesh(filename):
 
 def pbl(vertics):
     opoints=o3d.utility.Vector3dVector(vertics)
-    box=o3d.geometry.OrientedBoundingBox.create_from_points(opoints)
-    lineset=o3d.geometry.LineSet.create_from_oriented_bounding_box(box)
-    return opoints,box,lineset
+    obox=o3d.geometry.OrientedBoundingBox.create_from_points(opoints)
+    olineset=o3d.geometry.LineSet.create_from_oriented_bounding_box(box)
+    return opoints,obox,olineset
 
 def Visualize():
     v=o3d.visualization
