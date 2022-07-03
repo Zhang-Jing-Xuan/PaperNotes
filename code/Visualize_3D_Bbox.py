@@ -46,7 +46,7 @@ def Visualize():
 
 ROOT = "C:\\Users\\zjx61\\Desktop\\scene0565"
 filename = os.path.join(ROOT, "scene0565_00_vh_clean_2.ply")
-vertics = read_mesh(filename,chair_list)
+vertics = read_mesh(filename,statue_list)
 opoints,obox,olineset=pbl(vertics)
 color = [[1, 0, 0] for i in range(12)]
 olineset.colors = o3d.utility.Vector3dVector(color) 
