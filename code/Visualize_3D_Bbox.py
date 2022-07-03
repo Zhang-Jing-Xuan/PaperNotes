@@ -14,7 +14,7 @@ def read_mesh(filename,list_):
     assert os.path.isfile(filename)
     with open(filename, 'rb') as f:
         plydata = PlyData.read(f)
-        num_verts = len(chair_list)
+        num_verts = len(list_)
         vertices = np.zeros(shape=[num_verts, 6], dtype=np.float32)
         vertices[:, 0] = plydata['vertex'].data['x'][list_]
         vertices[:, 1] = plydata['vertex'].data['y'][list_]
