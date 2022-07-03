@@ -6,8 +6,9 @@ import os
 from plyfile import PlyData, PlyElement
 
 chair_list=[7934,6845,7832,7633,7419,7569,7614,7953,7034,4218,6121,4512,5051]
+statue_list=[113953,113287,109335,110761,111827,115150,111344,112827,114749,108844,110997,110680,113267,114490,111887,109765,110892,113068,109491,111720,112235,111272,114251,114336,105386,112265,115100,112916,109711,112372,113922,114287]
 
-def read_mesh(filename):
+def read_mesh(filename,chair_list):
     """ read XYZ for each vertex.
     """
     assert os.path.isfile(filename)
@@ -26,7 +27,7 @@ def read_mesh(filename):
 def pbl(vertics):
     opoints=o3d.utility.Vector3dVector(vertics)
     obox=o3d.geometry.OrientedBoundingBox.create_from_points(opoints)
-    olineset=o3d.geometry.LineSet.create_from_oriented_bounding_box(box)
+    olineset=o3d.geometry.LineSet.create_from_oriented_bounding_box(obox)
     return opoints,obox,olineset
 
 def Visualize():
@@ -45,7 +46,7 @@ def Visualize():
 
 ROOT = "C:\\Users\\zjx61\\Desktop\\scene0565"
 filename = os.path.join(ROOT, "scene0565_00_vh_clean_2.ply")
-vertics = read_mesh(filename)
+vertics = read_mesh(filename,list_)
 opoints,obox,olineset=pbl(vertics)
 color = [[1, 0, 0] for i in range(12)]
 olineset.colors = o3d.utility.Vector3dVector(color) 
