@@ -17,6 +17,7 @@
         * 1 RTX 3090 takes almost 15h for Nr3D, 55.1% for Nr3D!
         * Replacing all mentions of AT_CHECK with TORCH_CHECK in ./referit3d/external_tools/pointnet2/_ext_src/src in CUDA 11.
         * Point Cloud Visualization tool: open3d [[Package]](https://github.com/isl-org/Open3D)
+        * Point Cloud Visualization code: ![3D Box](/code/Visualize_3D_Bbox.py) ![Aligned Point Cloud](/code/Visualize_align_PC.py)
 
     <p align="center"> <img src='imgs/2022/07/20220701_MVT_3DVG.png' align="center" height="200px"> </p>
 
