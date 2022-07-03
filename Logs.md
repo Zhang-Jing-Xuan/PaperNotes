@@ -8,7 +8,7 @@
 ## 2022
 ### 2022/07
 
-- **2022/07/01, Friday.**
+- **2022/07/01, Vendredi.**
 
  1. <u>Multi-View Transformer for 3D Visual Grounding(CVPR2022)</u> [[PDF]](https://arxiv.org/pdf/2204.02174.pdf) [[Code]](https://github.com/sega-hsj/MVT-3DVG)
     - Main Idea: Two modals: Point cloud and text. Learn a multi-modal representation independent from from its sepecific single view. Different rotation matrixes are used for robust multi-view representation. Fuse features of each object with the query features.
@@ -30,7 +30,7 @@
 
     <p align="center"> <img src='imgs/2022/07/20220701_CCL.png' align="center" height="200px"> </p>
 
-- **2022/07/02, Saturday.**
+- **2022/07/02, Samedi.**
 3. <u>3D-SPS: Single-Stage 3D Visual Grounding via Referred Point Progressive Selection(CVPR2022)</u> [[PDF]](https://arxiv.org/pdf/2204.06272.pdf) [[Code]](https://github.com/fjhzhixi/3D-SPS)
     - Main Idea: First single stage 3D visual grounding method. It regards 3DVG task as a keypoint selection problem. Pcloud is inpupt, Pseed is feature, P0 is language-relevant keypooint, Pt is target keypoints and finally, Pt regresses to the bounding boxes.
     - Experiments: ScanRefer:47-48%(SOTA), Nr3D:51.5%, Sr3D:62.6%(GOOD)
@@ -40,6 +40,7 @@
 
     <p align="center"> <img src='imgs/2022/07/20220702_3D_SPS.png' align="center" height="200px"> </p>
 
+- **2022/07/03, Dimanche.**
 4. <u>ScanQA: 3D Question Answering for Spatial Scene Understanding(CVPR2022)</u> [[PDF]](https://arxiv.org/pdf/2112.10482.pdf) [[Code]](https://github.com/ATR-DBI/ScanQA)
     - Main Idea: This paper provides a new task: 3D VQA and a baseline which consists of 3 parts: queation and point clouds feature extraction, feature fusion and 3 MLP heads for object classification, answer classification and object localization.
     - Experiments: 23.45%(Baseline)
@@ -50,7 +51,7 @@
     <p align="center"> <img src='imgs/2022/07/20220702_ScanQA.png' align="center" height="200px"> </p>
 
 5. <u>Text-Guided Graph Neural Networks for Referring 3D Instance Segmentation(AAAI2021)</u> [[PDF]](https://www.aaai.org/AAAI21Papers/AAAI-4433.HuangP.pdf) [[Code]](https://github.com/hanhung/TGNN)
-    - Main Idea: 
+    - Main Idea: TODO
     - Experiments: Baseline model
     - Reproduce Notes: 
         * Not implemented yet.(TODO)
