@@ -38,6 +38,7 @@
         * 1 Telsa V100 or 2 RTX3090 is enough. It takes almost 39h while training on 2 RTX3090 without multi-view features. 
         * Distributed training yaml [[Code]](/NecessaryCode/3DSPS/default_Distributed.yaml)
         * Distributed training script [[Code]](/NecessaryCode/3DSPS/Distributed_Training.py)
+        * In pytorch 1.7.0 environment, you should replace "tile" in lib/ap_helper.py with "repeat".
 
     <p align="center"> <img src='imgs/2022/07/20220702_3D_SPS.png' align="center" height="200px"> </p>
 
