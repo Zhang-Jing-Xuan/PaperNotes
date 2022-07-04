@@ -52,3 +52,9 @@
 
     <p align="center"> <img src='imgs/2022/07/20220702_ScanQA.png' align="center" height="200px"> </p>
 
+- **2022/07/04, Lundi.**
+5. <u>ScanQA: Text-guided graph neural networks for referring 3d instance segmentation.(AAAI2021)</u> [[PDF]](https://www.aaai.org/AAAI21Papers/AAAI-4433.HuangP.pdf) [[Code]](https://github.com/hanhung/TGNN)
+    - Main Idea: (TODO)
+    - Experiments: (Baseline)
+    - Reproduce Notes: 
+        * Not implemented yet.(TODO)

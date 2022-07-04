@@ -1,1 +1,1 @@
-# Paper Reading and some experiments notes.
+# Paper reading and some experiments notes.
