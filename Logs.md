@@ -17,8 +17,8 @@
         * 1 RTX 3090 takes almost 15h for Nr3D, 55.1% for Nr3D!
         * Replacing all mentions of AT_CHECK with TORCH_CHECK in ./referit3d/external_tools/pointnet2/_ext_src/src in CUDA 11.
         * Point Cloud Visualization tool: open3d [[Package]](https://github.com/isl-org/Open3D)
-        * Point Cloud 3D Box Visualization: [[Code]](/code/Visualize_3D_Bbox.py) 
-        * Point Cloud aligned: [[Code]](/code/Visualize_align_PC.py)
+        * Point Cloud 3D Box Visualization: [[Code]](/NecessaryCode/MVT-3DVG/Visualize_3D_Bbox.py) 
+        * Point Cloud aligned: [[Code]](/NecessaryCode/MVT-3DVG/Visualize_align_PC.py)
 
     <p align="center"> <img src='imgs/2022/07/20220701_MVT_3DVG.png' align="center" height="200px"> </p>
 
@@ -35,8 +35,9 @@
     - Main Idea: First single stage 3D visual grounding method. It regards 3DVG task as a keypoint selection problem. Pcloud is inpupt, Pseed is feature, P0 is language-relevant keypooint, Pt is target keypoints and finally, Pt regresses to the bounding boxes.
     - Experiments: ScanRefer:47-48%(SOTA), Nr3D:51.5%, Sr3D:62.6%(GOOD)
     - Reproduce Notes: 
-        * Not implemented yet.(TODO)
-        * 1 Telsa V100 or 2 RTX3090 is enough.
+        * 1 Telsa V100 or 2 RTX3090 is enough. It takes almost 39h while training on 2 RTX3090 without multi-view features. 
+        * Distributed training yaml [[Code]](/NecessaryCode/3DSPS/default_Distributed.yaml)
+        * Distributed training script [[Code]](/NecessaryCode/3DSPS/Distributed_Training.py)
 
     <p align="center"> <img src='imgs/2022/07/20220702_3D_SPS.png' align="center" height="200px"> </p>
 
