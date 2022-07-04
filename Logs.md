@@ -51,10 +51,3 @@
 
     <p align="center"> <img src='imgs/2022/07/20220702_ScanQA.png' align="center" height="200px"> </p>
 
-5. <u>Text-Guided Graph Neural Networks for Referring 3D Instance Segmentation(AAAI2021)</u> [[PDF]](https://www.aaai.org/AAAI21Papers/AAAI-4433.HuangP.pdf) [[Code]](https://github.com/hanhung/TGNN)
-    - Main Idea: TODO
-    - Experiments: Baseline model
-    - Reproduce Notes: 
-        * Not implemented yet.(TODO)
-
-    <p align="center"> <img src='imgs/2022/07/20220703_.png' align="center" height="200px"> </p>
