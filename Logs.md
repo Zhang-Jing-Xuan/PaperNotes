@@ -62,7 +62,7 @@
 
 - **2022/07/05, Mardi.**
 6. <u>X-Trans2Cap: Cross-Modal Knowledge Transfer using Transformer for 3D Dense Captioning(CVPR2022)</u> [[PDF]](https://arxiv.org/pdf/2203.00843.pdf) [[Code]](https://github.com/CurryYuan/X-Trans2Cap)
-    - Main Idea: TODO 
+    - Main Idea: In training stage, they utilize both 2D and 3D modalities as teacher network to teach the student network who only use 3D modality. In inference stage, they only use 3D modality.
     - Experiments: 
     - Reproduce Notes: 
         * Not implemented yet.(TODO)
