@@ -61,3 +61,8 @@
     <p align="center"> <img src='imgs/2022/07/20220704_TGNN.png' align="center" height="200px"> </p>
 
 - **2022/07/05, Mardi.**
+6. <u>X-Trans2Cap: Cross-Modal Knowledge Transfer using Transformer for 3D Dense Captioning(CVPR2022)</u> [[PDF]](https://arxiv.org/pdf/2203.00843.pdf) [[Code]](https://github.com/CurryYuan/X-Trans2Cap)
+    - Main Idea: TODO 
+    - Experiments: 
+    - Reproduce Notes: 
+        * Not implemented yet.(TODO)
