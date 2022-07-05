@@ -54,7 +54,7 @@
 
 - **2022/07/04, Lundi.**
 5. <u>ScanQA: Text-guided graph neural networks for referring 3d instance segmentation.(AAAI2021)</u> [[PDF]](https://www.aaai.org/AAAI21Papers/AAAI-4433.HuangP.pdf) [[Code]](https://github.com/hanhung/TGNN)
-    - Main Idea: (TODO)
+    - Main Idea: This paper dividing the task into two part: 3D instance segmentation and instance refering. 3D mask prediction is interesting. They propose a clustering algorithm to cluster points belonging to the same instance. A text-guided graph neural network is proposed for the second phrase. 
     - Experiments: (Baseline)
     - Reproduce Notes: 
         * Not implemented yet.(TODO)
