@@ -50,7 +50,7 @@
         * Not implemented yet.(TODO)
         * 1 Telsa V100 takes < 1 day.
 
-    <p align="center"> <img src='imgs/2022/07/20220702_ScanQA.png' align="center" height="200px"> </p>
+    <p align="center"> <img src='imgs/2022/07/20220703_ScanQA.png' align="center" height="200px"> </p>
 
 - **2022/07/04, Lundi.**
 5. <u>ScanQA: Text-guided graph neural networks for referring 3d instance segmentation.(AAAI2021)</u> [[PDF]](https://www.aaai.org/AAAI21Papers/AAAI-4433.HuangP.pdf) [[Code]](https://github.com/hanhung/TGNN)
@@ -58,3 +58,6 @@
     - Experiments: (Baseline)
     - Reproduce Notes: 
         * Not implemented yet.(TODO)
+    <p align="center"> <img src='imgs/2022/07/20220704_TGNN.png' align="center" height="200px"> </p>
+
+- **2022/07/05, Mardi.**
