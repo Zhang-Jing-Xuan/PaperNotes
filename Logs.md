@@ -69,3 +69,10 @@
     - Experiments: 
     - Reproduce Notes: 
         * Not implemented yet.(TODO)
+
+- **2022/07/06, Mercredi.**
+7. <u>3DJCG: A Unified Framework for Joint Dense Captioning and Visual Grounding on 3D Point Clouds(CVPR2022)</u> [[PDF]](https://openaccess.thecvf.com/content/CVPR2022/papers/Cai_3DJCG_A_Unified_Framework_for_Joint_Dense_Captioning_and_Visual_CVPR_2022_paper.pdf) [[Code]](https://github.com/zlccccc/3DJCG)
+    - Main Idea: This paper provides a unified framework for joint dense captioning and visual grounding on 3D point clouds. Feature representation and fusion modules are task-agnostic which are designed for collaboatively learning.
+    - Experiments: 
+    - Reproduce Notes: 
+        * Not implemented yet.(TODO)
