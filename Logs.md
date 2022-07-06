@@ -39,6 +39,7 @@
         * Distributed training yaml [[Code]](/NecessaryCode/3DSPS/default_Distributed.yaml)
         * Distributed training script [[Code]](/NecessaryCode/3DSPS/Distributed_Training.py)
         * In pytorch 1.7.0 environment, you should replace "tile" in lib/ap_helper.py with "repeat".
+        * If you use distributed training, you should add "if args.local_rank == 0" before you save the model.
 
     <p align="center"> <img src='imgs/2022/07/20220702_3D_SPS.png' align="center" height="200px"> </p>
 
