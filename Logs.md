@@ -73,6 +73,14 @@
 - **2022/07/06, Mercredi.**
 7. <u>3DJCG: A Unified Framework for Joint Dense Captioning and Visual Grounding on 3D Point Clouds(CVPR2022)</u> [[PDF]](https://openaccess.thecvf.com/content/CVPR2022/papers/Cai_3DJCG_A_Unified_Framework_for_Joint_Dense_Captioning_and_Visual_CVPR_2022_paper.pdf) [[Code]](https://github.com/zlccccc/3DJCG)
     - Main Idea: This paper provides a unified framework for joint dense captioning and visual grounding on 3D point clouds. Feature representation and fusion modules are task-agnostic which are designed for collaboatively learning. They design a very triky network!
-    - Experiments: 
+    - Experiments: SOTA on ScanRefer and Nr3D, even better than 3D Vision Gounding paper in IJCV2022.  
     - Reproduce Notes: 
         * Not implemented yet.(TODO)
+
+- **2022/07/07, Jeudi.**
+8. <u> Escaping the Big Data Paradigm with Compact Transformers(Arxiv202206)</u> [[PDF]](https://arxiv.org/pdf/2104.05704.pdf) [[Code]](https://github.com/rishikksh20/compact-convolution-transformer)
+    - Main Idea: This paper design a new transformer architecture for training on small dataset. First, they reduce the layers, heads and hidden dimensions. Then, they design SeqPool module:x'=softmax(g(f(x)).T) => z=x'*x, where f is transformer encoder, g is a linear layer. Finally, a convolutional tokenizer, which substitutes for patch and embedding is designed to introduce an inductive bias into the model. 
+    - Experiments: SOTA in small dataset such as Cifar10 and Flower102.  
+    - Reproduce Notes: 
+        * Not implemented yet.(TODO)
+    <p align="center"> <img src='imgs/2022/07/20220707_CCT.png' align="center" height="200px"> </p>
