@@ -71,13 +71,20 @@
     - Main Idea: This paper provides a unified framework for joint dense captioning and visual grounding on 3D point clouds. Feature representation and fusion modules are task-agnostic which are designed for collaboatively learning. They design a very triky network!
     - Experiments: SOTA on ScanRefer and Nr3D, even better than 3D Vision Gounding paper in IJCV2022.
     - Reproduce Notes: 
-      * 1 RTX3090 takes almost 4 days on ScanRefer dataset.
-      * If you use multi-view features, this project will occupy **212GB** of space. So, you'd better rent GPUs in BeiJing A district in AutoDL.
+      * 1 RTX3090 takes almost 4 days to train and 1h*"repeats" to validate on ScanRefer dataset.
+      * If you use multi-view features, this project will occupy **212GB** of space. So, you'd better rent GPUs in BeiJing district in AutoDL.
       * Scan2CAD dataset and its preprocessing are also needed to train this project. [[Code]](https://github.com/daveredrum/Scan2Cap)
       * If your system is CUDA11.0+, you should replace pointnet++ in the original repo with 3DSPS.
       * To issue:"No module named 'quaternion", you should type "pip install numpy-quaternion" in the terminal.
       * ScanRefer dataset can directly unzip in the dataset folder.
-      * "ScanRefer_filtered_organized.json" should be changed to "ScanRefer_filtered.json" in the code.
+      * "ScanRefer_filtered_organized.json" can be obtained by [[Code]](https://github.com/heng-hw/SpaCap3D/blob/16fcfb20f68f0b605b007aa554e12566175ef646/scripts/organize_scanrefer.py)
+      * Training arguments must match validation arguments or you will get a RunTime Error: size mismatch.
+      * Java is a must.
+      ```bash
+      sudo apt-get update
+      sudo apt-get install openjdk-8-jdk
+      ```
+      * "--num_ground=150" means avoiding the training of the caption head for the first 150 epochs.
     - Future work: Performance of vision grounding will improve.  
 
 - **2022/07/07, Jeudi.**
