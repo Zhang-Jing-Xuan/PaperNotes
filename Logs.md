@@ -70,6 +70,14 @@
 7. <u>3DJCG: A Unified Framework for Joint Dense Captioning and Visual Grounding on 3D Point Clouds(CVPR2022)</u> [[PDF]](https://openaccess.thecvf.com/content/CVPR2022/papers/Cai_3DJCG_A_Unified_Framework_for_Joint_Dense_Captioning_and_Visual_CVPR_2022_paper.pdf) [[Code]](https://github.com/zlccccc/3DJCG)
     - Main Idea: This paper provides a unified framework for joint dense captioning and visual grounding on 3D point clouds. Feature representation and fusion modules are task-agnostic which are designed for collaboatively learning. They design a very triky network!
     - Experiments: SOTA on ScanRefer and Nr3D, even better than 3D Vision Gounding paper in IJCV2022.
+    - Reproduce Notes: 
+      * 1 RTX3090 takes almost 4 days on ScanRefer dataset.
+      * If you use multi-view features, this project will occupy **212GB** of space. So, you'd better rent GPUs in BeiJing A district in AutoDL.
+      * Scan2CAD dataset and its preprocessing are also needed to train this project. [[Code]](https://github.com/daveredrum/Scan2Cap)
+      * If your system is CUDA11.0+, you should replace pointnet++ in the original repo with 3DSPS.
+      * To issue:"No module named 'quaternion", you should type "pip install numpy-quaternion" in the terminal.
+      * ScanRefer dataset can directly unzip in the dataset folder.
+      * "ScanRefer_filtered_organized.json" should be changed to "ScanRefer_filtered.json" in the code.
     - Future work: Performance of vision grounding will improve.  
 
 - **2022/07/07, Jeudi.**
@@ -87,3 +95,7 @@
 9. ReferIt3D: Neural Listeners for Fine-Grained 3D
 Object Identification in Real-World Scenes<u> (ECCV2020)</u> [[PDF]](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123460409.pdf) [[Code]](https://github.com/referit3d/referit3d)
     - Main Idea: They introduce a two-part dataset: a high quality synthetic dataset of 83572 referential utterances (Sr3D) and a dataset with 41503 natural (human) referential utterances (Nr3D). 
+
+- **2022/07/09, Samedi.**
+10. Spatiality-guided Transformer for 3D Dense Captioning on Point Clouds<u> (IJCV2022)</u> [[PDF]](https://arxiv.org/pdf/2204.10688.pdf) [[Code]](https://github.com/heng-hw/SpaCap3D)
+    - Main Idea: (TODO)
