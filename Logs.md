@@ -110,3 +110,6 @@ Object Identification in Real-World Scenes<u> (ECCV2020)</u> [[PDF]](https://www
 - **2022/07/10, Dimanche.**
 11. PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation<u> (CVPR2017)</u> [[PDF]](https://openaccess.thecvf.com/content_cvpr_2017/papers/Qi_PointNet_Deep_Learning_CVPR_2017_paper.pdf) [[Code]](https://github.com/charlesq34/pointnet)
     - Main Idea: This paper fully exploits permutation invariant property of points cloud and propose PointNet. This paper also provides some theoretical analysis in [[Supplemental]](https://openaccess.thecvf.com/content_cvpr_2017/supplemental/Qi_PointNet_Deep_Learning_2017_CVPR_supplemental.pdf).
+
+- **2022/07/11, Lundi.**
+- Experiment on COCO2017 dataset with 4 RTX3090s is over. The experiment lasted for 5 days! My results surpass the baseline model.
