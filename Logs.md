@@ -104,12 +104,13 @@ Object Identification in Real-World Scenes<u> (ECCV2020)</u> [[PDF]](https://www
     - Main Idea: They introduce a two-part dataset: a high quality synthetic dataset of 83572 referential utterances (Sr3D) and a dataset with 41503 natural (human) referential utterances (Nr3D). 
 
 - **2022/07/09, Samedi.**
-10. Spatiality-guided Transformer for 3D Dense Captioning on Point Clouds<u> (IJCV2022)</u> [[PDF]](https://arxiv.org/pdf/2204.10688.pdf) [[Code]](https://github.com/heng-hw/SpaCap3D)
-    - Main Idea: (TODO)
+Run the 3DJCG code.
 
 - **2022/07/10, Dimanche.**
-11. PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation<u> (CVPR2017)</u> [[PDF]](https://openaccess.thecvf.com/content_cvpr_2017/papers/Qi_PointNet_Deep_Learning_CVPR_2017_paper.pdf) [[Code]](https://github.com/charlesq34/pointnet)
+10. PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation<u> (CVPR2017)</u> [[PDF]](https://openaccess.thecvf.com/content_cvpr_2017/papers/Qi_PointNet_Deep_Learning_CVPR_2017_paper.pdf) [[Code]](https://github.com/charlesq34/pointnet)
     - Main Idea: This paper fully exploits permutation invariant property of points cloud and propose PointNet. This paper also provides some theoretical analysis in [[Supplemental]](https://openaccess.thecvf.com/content_cvpr_2017/supplemental/Qi_PointNet_Deep_Learning_2017_CVPR_supplemental.pdf).
 
 - **2022/07/11, Lundi.**
 - Experiment on COCO2017 dataset with 4 RTX3090s is over. The experiment lasted for 5 days! My results surpass the baseline model.
+11. Spatiality-guided Transformer for 3D Dense Captioning on Point Clouds<u> (IJCV2022)</u> [[PDF]](https://arxiv.org/pdf/2204.10688.pdf) [[Code]](https://github.com/heng-hw/SpaCap3D)
+    - Main Idea: (TODO)
