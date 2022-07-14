@@ -85,6 +85,15 @@
       sudo apt-get install openjdk-8-jdk
       ```
       * "--num_ground=150" means avoiding the training of the caption head for the first 150 epochs.
+
+Visual Grounding：
+
+|  Validation Set  |             |          |  Unique  |  Unique | Multiple | Multiple |  Overall | Overall |
+|:----------------:|:-----------:|:--------:|:--------:|:-------:|:--------:|:--------:|:--------:|:-------:|
+|      Methods     | Publication | Modality | Acc@0.25 | Acc@0.5 | Acc@0.25 |  Acc@0.5 | Acc@0.25 | Acc@0.5 |
+|       3DJCG (Paper)      |   CVPR2022  |    3D    |   78.75  |  61.30  |   40.13  |   30.08  |   47.62  |  36.14  |
+|       3DJCG (Paper)      |   CVPR2022  |  2D + 3D |   83.47  |  64.34  |   41.39  |   30.82  |   49.56  |  37.33  |
+|       3DJCG (Our Reproduce)      |   CVPR2022  |  2D + 3D |   81.98 |  63.18  |   41.35  |   30.04  |   49.23  |  36.47  |
     - Future work: Performance of vision grounding will improve.  
 
 - **2022/07/07, Jeudi.**
