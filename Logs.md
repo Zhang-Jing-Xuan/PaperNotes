@@ -125,4 +125,6 @@ Run the 3DJCG code.
 - **2022/07/20, Mercredi.**
 11. Spatiality-guided Transformer for 3D Dense Captioning on Point Clouds<u> (IJCV2022)</u> [[PDF]](https://arxiv.org/pdf/2204.10688.pdf) [[Code]](https://github.com/heng-hw/SpaCap3D)
     - Main Idea: This paper proposed SpaCap to do 3D Dense Captioning. Main-axis spatial relation label maps are prepocessed before training. They can be used as the prior knowledge for model. Besides, this paper also propose a new Transformer decoder: vision token mask and word token mask are both fed to self-attention layer.
+    - Reproduce Notes: 
+        * (TODO)
 <p align="center"> <img src='imgs/2022/07/20220720_SpaCap3D.png' align="center" height="200px"> </p>
