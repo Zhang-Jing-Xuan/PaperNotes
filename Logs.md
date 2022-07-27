@@ -35,12 +35,27 @@
     - Main Idea: First single stage 3D visual grounding method. It regards 3DVG task as a keypoint selection problem. Pcloud is inpupt, Pseed is feature, P0 is language-relevant keypooint, Pt is target keypoints and finally, Pt regresses to the bounding boxes.
     - Experiments: ScanRefer:47-48%(SOTA), Nr3D:51.5%, Sr3D:62.6%(GOOD)
     - Reproduce Notes: 
-        * 1 Telsa V100 or 2 RTX3090 is enough. It takes almost 39h while training on 2 RTX3090 without multi-view features. 
+        * 1 Telsa V100 or 2 RTX3090 is enough. It takes almost 39h while training on 2 RTX3090 with/without multi-view features. 
         * Distributed training yaml [[Code]](/NecessaryCode/3DSPS/default_Distributed.yaml)
         * Distributed training script [[Code]](/NecessaryCode/3DSPS/Distributed_Training.py)
         * In pytorch 1.7.0 environment, you should replace "tile" in lib/ap_helper.py with "repeat".
         * If you use distributed training, you should add "if args.local_rank == 0" before you save the model.
-
+        * If you use distributed training, you should change the torch.load code in scipts/eval.py to 
+        ```python
+        checkpoint = torch.load(path)
+        model.load_state_dict({k[7:]: v for k, v in checkpoint.items()}, strict=True)
+        ```
+        * If you want to visualize the results, you should do following steps:
+        1) add following code to config/default.yaml 
+        ```yaml
+        VISUALIZE:
+            scene_id: "scene0011_00"
+        ```
+        2) change some codes in script/visualize.py [[Code]](/NecessaryCode/3DSPS/visualize.py)
+        3) run command in the terminal
+        ```bash
+        python scripts/visualize.py --folder 2022-07-23_20-36_REPRODUCE-MULTIVIEW_DOUBLE_WORKERS-1 --config ./config/default.yaml
+        ```
     <p align="center"> <img src='imgs/2022/07/20220702_3D_SPS.png' align="center" height="200px"> </p>
 
 - **2022/07/03, Dimanche.**
@@ -126,5 +141,5 @@ Run the 3DJCG code.
 11. Spatiality-guided Transformer for 3D Dense Captioning on Point Clouds<u> (IJCV2022)</u> [[PDF]](https://arxiv.org/pdf/2204.10688.pdf) [[Code]](https://github.com/heng-hw/SpaCap3D)
     - Main Idea: This paper proposed SpaCap to do 3D Dense Captioning. Main-axis spatial relation label maps are prepocessed before training. They can be used as the prior knowledge for model. Besides, this paper also propose a new Transformer decoder: vision token mask and word token mask are both fed to self-attention layer.
     - Reproduce Notes: 
-        * (TODO)
+        * Successful
 <p align="center"> <img src='imgs/2022/07/20220720_SpaCap3D.png' align="center" height="200px"> </p>
