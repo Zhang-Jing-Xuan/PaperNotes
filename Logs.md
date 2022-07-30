@@ -143,3 +143,10 @@ Run the 3DJCG code.
     - Reproduce Notes: 
         * Successful
 <p align="center"> <img src='imgs/2022/07/20220720_SpaCap3D.png' align="center" height="200px"> </p>
+
+- **2022/07/30, Samedi.**
+12. D3Net: A Unified Speaker-Listener Architecture for 3D Dense Captioning and Visual Grounding<u> (ECCV2022)</u> [[PDF]](https://daveredrum.github.io/D3Net/D3Net.pdf) [[Code]](https://github.com/daveredrum/D3Net)
+    - Main Idea: This paper proposed D3Net to do 3D visual grounding and dense captioning jointly. This self-critical property of D3Net also introduces discriminability during object caption generation and enables semi-supervised training on ScanNet data with partially annotated descriptions. They outperforms SOTA methods in both tasks on the ScanRefer dataset.
+    - Reproduce Notes: 
+        * Not provide a yaml file.
+<p align="center"> <img src='imgs/2022/07/20220730_D3Net.png' align="center" height="200px"> </p>
