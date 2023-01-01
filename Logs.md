@@ -152,7 +152,7 @@ Run the 3DJCG code.
 <p align="center"> <img src='imgs/2022/07/20220730_D3Net.png' align="center" height="200px"> </p>
 
 When the downloaded zip file is corrupted, we can fix it by WinRAR!
-
+ 
 ### 2022/09
 - **2022/09/05, Lundi.**
 1. 基于深度学习的图像复原技术研究_武士想 (2022中科大博)
